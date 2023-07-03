@@ -1,4 +1,9 @@
-<script></script>
+<script>
+import AppMain from './components/AppMain.vue'
+export default {
+  components: { AppMain }
+} 
+</script>
 
 <template>
   <header>
@@ -6,11 +11,19 @@
   </header>
 
   <main>
-    <div class="pokebox d-flex mt-3 container">
-      <div class="blue-circle mx-1"></div>
-      <div class="red-circle mx-1"></div>
-      <div class="yellow-circle mx-1"></div>
-      <div class="green-circle mx-1"></div>
+    <div class="pokebox  mt-3 container">
+      <div class="boxheader d-flex">
+        <div class="blue-circle mx-1"></div>
+        <div class="red-circle mx-1"></div>
+        <div class="yellow-circle mx-1"></div>
+        <div class="green-circle mx-1"></div>
+      </div>
+
+      <div class="main-screen p-1 mt-4">
+
+        <AppMain />
+
+      </div>
     </div>
   </main>
 </template>
