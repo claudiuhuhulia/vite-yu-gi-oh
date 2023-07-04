@@ -11,5 +11,8 @@
   - All'interno di data creo l'array vuoto _pokemon_ nel quale si aggiungeranno gli oggetti relativi alle chiamate _API_.
   - Le chiamate _API_ dovranno avvenire all'apertura della pagina, quindi dentro _created_ andrò a scrivere la relativa function che farà le chiamate _API_.
   - Creo un _v-for_ che girerà sui pokemon.
-- Creo il componente dedicato alla singola card che conterrà i dati ricevuti dall'api dell'oggetto _pokemon_ che gira sul v-for precedentemente creato.
+- Creo il componente _PokemonCard_ dedicato alla singola card che conterrà i dati ricevuti dall'api dell'oggetto _pokemon_ che gira sul v-for precedentemente creato.
   - Preparo per **props** che riceveranno i dati che andranno inseriti nella card.
+  - Creo il markup della card inserendo le props come dati dinamici.
+- Creo un nuovo file js _store_ in cui andrò a rendere reattivo gli oggetti delle _API_ per poterlo riciclare su tutto il progetto senza usare il drilling.
+-

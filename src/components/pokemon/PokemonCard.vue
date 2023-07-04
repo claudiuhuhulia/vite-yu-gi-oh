@@ -5,13 +5,14 @@ export default {
         image: String,
         number: Number,
         type: String
-    }
+    },
+
 }
 </script>
 
 <template>
-    <div class="pokemon-card ">
-        <div class="pok-img ">
+    <div class="pokemon-card mt-3">
+        <div class="pok-img my-3">
             <img :src="image" :alt="name">
         </div>
         <p>{{ number }}</p>
@@ -26,7 +27,6 @@ export default {
     height: 150px;
     width: 150px;
 
-
     img {
         height: 100%;
         border-radius: 50%;
@@ -40,5 +40,20 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+
+    background-color: gray;
+    border-radius: 20px;
+
+    .type {
+        font-style: italic;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 </style>
