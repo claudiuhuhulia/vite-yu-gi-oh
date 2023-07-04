@@ -10,7 +10,13 @@ export default {
   data() {
     return {
       pokemons: [],
-      types1: []
+      types1: [],
+      currentType: ''
+    }
+  },
+  methods: {
+    onTypeChange(term) {
+      this.currentType = term
     }
   },
   created() {
@@ -39,7 +45,7 @@ export default {
           <div class="yellow-circle mx-1"></div>
           <div class="green-circle mx-1"></div>
         </div>
-        <SelectForm :types1="types1" />
+        <SelectForm types1="types1" @type-change="onTypeChange" />
       </div>
 
 
